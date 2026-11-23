@@ -1,5 +1,7 @@
 <p align="center">
-  <a href="README.md" title="English"><img src="./assets/flags/us.svg" width="28" alt="English" /></a>
+  <a href="README.en-GB.md" title="English (UK)"><img src="./assets/flags/gb-eng.svg" width="28" alt="English (UK)" /></a>
+  ·
+  <a href="README.md" title="English (US)"><img src="./assets/flags/us.svg" width="28" alt="English (US)" /></a>
   ·
   <a href="README.pt-BR.md" title="Português"><img src="./assets/flags/br.svg" width="32" alt="Português" /></a>
   ·
