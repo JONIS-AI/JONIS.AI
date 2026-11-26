@@ -57,7 +57,7 @@
 
 <br/>
 
-From prototype to production: agents, RAG, voice, integrations and pipelines that cut manual work and drive revenue.
+From reality to production: agents, RAG, voice, integrations and pipelines that cut manual work and drive revenue.
 
 `Agents` `RAG` `Automation` `Voice` `APIs` `Fine-tuning`
 
