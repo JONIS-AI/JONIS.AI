@@ -1,89 +1,250 @@
 <p align="center">
-  <a href="README.en-GB.md" title="English (UK)"><img src="./assets/flags/gb-eng.svg" width="28" alt="English (UK)" /></a>
+  <a href="README.en-GB.md" title="Английский (Великобритания)"><img src="./assets/flags/gb-eng.svg" width="28" alt="Английский (Великобритания)" /></a>
   ·
-  <a href="README.md" title="English (US)"><img src="./assets/flags/us.svg" width="28" alt="English (US)" /></a>
+  <a href="README.md" title="Английский (США)"><img src="./assets/flags/us.svg" width="28" alt="Английский (США)" /></a>
   ·
-  <a href="README.pt-BR.md" title="Português"><img src="./assets/flags/br.svg" width="28" alt="Português" /></a>
+  <a href="README.pt-BR.md" title="Португальский"><img src="./assets/flags/br.svg" width="28" alt="Португальский" /></a>
   ·
   <a href="README.ru.md" title="Русский"><img src="./assets/flags/ru.svg" width="32" alt="Русский" /></a>
   ·
-  <a href="README.zh-CN.md" title="中文"><img src="./assets/flags/cn.svg" width="28" alt="中文" /></a>
+  <a href="README.zh-CN.md" title="Китайский"><img src="./assets/flags/cn.svg" width="28" alt="Китайский" /></a>
   ·
-  <a href="README.ar.md" title="العربية"><img src="./assets/flags/sa.svg" width="28" alt="العربية" /></a>
+  <a href="README.ar.md" title="Арабский"><img src="./assets/flags/sa.svg" width="28" alt="Арабский" /></a>
 </p>
 
 <div align="center">
 
-<img src="./assets/hero.svg" alt="JONIS.AI — AI Engineer, 3D Sites и XaaS" width="100%" />
+<img src="./assets/hero.svg" alt="JONIS.AI — автономный цифровой дворецкий с открытым исходным кодом, не зависящий от конкретной модели" width="100%" />
+
+# JONIS.AI
+### Ваш цифровой дворецкий на новом уровне.
+**Автономный. Независимый от моделей. С открытым исходным кодом. Бесплатный локальный запуск.**
+
+Открытый автономный цифровой дворецкий — улучшенный JARVIS — для реальных задач в вашей системе, с дополнительным 3D/HUD и двусторонним голосом. Запускайте бесплатные локальные модели через Ollama или используйте свои ключи Claude, Gemini и OpenAI/Codex.
+
+<a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="Лицензия MIT" /></a>
+<a href="https://github.com/JONIS-AI/JONIS.AI/pulls"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="Вклад через pull request приветствуется" /></a>
+<a href="#локальный-режим-и-cloud-api"><img src="https://img.shields.io/badge/Mode-Local%20%26%20Cloud%20BYOK-blueviolet" alt="Локальный и облачный режимы BYOK" /></a>
+<a href="#движки-моделей"><img src="https://img.shields.io/badge/LLMs-Ollama%20%7C%20Claude%20%7C%20Gemini%20%7C%20OpenAI-blue" alt="Движки моделей Ollama, Claude, Gemini и OpenAI" /></a>
 
 <br/>
 
 <a href="https://github.com/JONIS-AI"><img src="https://img.shields.io/badge/ORG-JONIS--AI-0b1020?style=flat-square&logo=github&logoColor=22d3ee" alt="Организация JONIS.AI" /></a>
 <img src="https://img.shields.io/badge/STATUS-BUILDING-0b1020?style=flat-square&logo=statuspage&logoColor=8b5cf6" alt="Статус: в разработке" />
-<img src="https://komarev.com/ghpvc/?username=jonypeixoto&style=flat-square&color=22d3ee&label=%D0%9F%D0%A0%D0%9E%D0%A1%D0%9C%D0%9E%D0%A2%D0%A0%D0%AB" alt="Просмотры профиля" />
+<img src="https://komarev.com/ghpvc/?username=jonypeixoto&style=flat-square&color=22d3ee&label=VIEWS" alt="Просмотры профиля" />
 
 <br/><br/>
 
-<a href="#о-проекте">О проекте</a> · <a href="#что-я-создаю">Что я создаю</a> · <a href="#стек">Стек</a> · <a href="#статистика">Статистика</a> · <a href="#планы">Планы</a> · <a href="#контакты">Контакты</a>
+<a href="#цифровой-дворецкий-созданный-служить-и-действовать">О проекте</a> · <a href="#локальный-режим-и-cloud-api">Локально и облако</a> · <a href="#демонстрация-и-впечатления">Демо</a> · <a href="#что-jonis-делает-для-вас">Возможности</a> · <a href="#-модули-и-возможности-дворецкого">Модули</a> · <a href="#obsidian-как-второй-мозг">Obsidian</a> · <a href="#движки-моделей">Движки</a> · <a href="#-быстрый-старт">Быстрый старт</a> · <a href="#-план-развития">План развития</a> · <a href="#-частые-вопросы">Частые вопросы</a>
 
 </div>
 
 ---
 
-## О проекте
+## Цифровой дворецкий, созданный служить и действовать
+
+Большинство ИИ-инструментов ждут вашего следующего запроса. **JONIS.AI** создаётся как цифровой дворецкий с виртуальным присутствием, голосом и ограниченной автономностью: он читает ваш контекст, проявляет инициативу в заданных вами рамках, переключает «мозги» под конкретную задачу и выполняет реальные действия в вашей среде.
+
+- **Бесплатно и с открытым исходным кодом:** ПО под лицензией MIT без подписок и привязки к поставщику. В локальном режиме нет платы за API.
+- **Смена LLM за секунды:** начните с бесплатных локальных моделей через **Ollama** или подключите **Claude, Gemini, OpenAI/Codex, OpenRouter** и совместимые движки с собственными ключами.
+- **Голос и визуальное присутствие:** по замыслу — сначала текст, а двусторонний голос и дополнительный 3D-аватар/HUD появятся позже согласно плану развития.
+- **Границы задаёте вы:** списки разрешённых действий, подтверждение чувствительных операций и локальный журнал аудита — ключевые принципы проектирования.
+
+> Ваше хранилище. Ваши правила. Ваш выбор интеллекта.
+
+**Статус проекта:** продукт находится в разработке. Этот репозиторий пока содержит концепцию, архитектуру, визуальный стиль и план развития; исполняемые возможности, описанные ниже, описывают целевой продукт.
+
+---
+
+## Локальный режим и Cloud API
+
+Выберите режим работы своего дворецкого с учётом оборудования, бюджета и требований к конфиденциальности.
+
+| Критерий | Локальный режим | Облачный / BYOK |
+| :--- | :--- | :--- |
+| **Стоимость** | **€0 / R$0 за API** — только оборудование и электричество | Тарифы поставщика или бесплатный тариф; вы используете собственный ключ |
+| **Конфиденциальность** | **Максимальная** — данные обрабатываются на вашем устройстве | Выбранный контекст отправляется поставщику выбранной LLM |
+| **Требования** | Подходящие CPU/GPU и установленный [Ollama](https://ollama.com/) | Подключение к интернету и действующий API-ключ |
+| **Примеры моделей** | `qwen2.5-coder`, `llama`, `deepseek` | Claude, Gemini, OpenAI/Codex, OpenRouter |
+| **Лучше подходит для** | Постоянного использования, работы без интернета и чувствительных данных | Сложных рассуждений, длинного контекста и всплесков нагрузки |
+
+Бесплатные тарифы и квоты облачных сервисов могут меняться, а использование API может повлечь расходы. Платный поставщик не требуется для использования запланированного локального режима.
+
+---
+
+## Демонстрация и впечатления
 
 <div align="center">
   <img src="./assets/jonis-core.gif" alt="Анимированное ядро JONIS.AI: бронированная фигура со светящимися синими глазами и голубым реактором в груди" width="320" />
   <br/>
-  <sub>JONIS.AI — операционное ядро</sub>
+  <sub>JONIS.AI — визуальное ядро</sub>
 </div>
 
-**JONIS.AI** — инженерный центр **Jony Peixoto**, основателя **CyberTimeUP**. Здесь объединяются фирменный стиль, продукты и эксперименты на стыке **прикладного ИИ**, **3D-веба** и **XaaS-продуктов**.
-
-> Создавать там, где интеллект встречается с геометрией.
+<br/>
 
 <div align="center">
-  <img src="./assets/terminal.svg" alt="Терминал: whoami, стек и миссия" width="100%" />
+  <img src="./assets/terminal.svg" alt="Терминал JONIS.AI: личность, движки моделей и миссия" width="100%" />
 </div>
 
-**Фокус:** `прикладной ИИ` · `иммерсивный 3D` · `масштабируемые продукты` · `одержимость деталями`
+Приведённая ниже последовательность иллюстрирует запланированный сквозной рабочий процесс.
+
+```text
+[JONIS.AI — целевой рабочий процесс]
+> "Переключись на бесплатную локальную модель, упорядочь отчёты в /finance и создай сводку."
+
+[Движок: ollama/qwen2.5-coder:7b | Голос: готов | Политика: подтверждать запись]
+> Классифицировано отчётов: 14
+> Сводка сохранена в /finance/monthly-summary.md
+```
 
 ---
 
-## Что я создаю
+## Что JONIS делает для вас
 
 <details>
-<summary><strong>01 · AI Engineering</strong> — агенты, автоматизация и LLM-приложения</summary>
+<summary><strong>01 · Контекст и инициатива</strong> — понимание хранилища и предложение следующего полезного действия</summary>
 
 <br/>
 
-От прототипа до продакшена: агенты, RAG, голос, интеграции и пайплайны, которые сокращают ручную работу и увеличивают выручку.
+Объединяет активные заметки, задачи и недавнюю активность в рабочий контекст. Может предложить следующий шаг, составить план и спросить перед действием, если запрос неоднозначен.
 
-`Агенты` `RAG` `Автоматизация` `Голос` `API` `Fine-tuning`
+`Контекст` `Планирование` `Проактивные подсказки` `Ручная проверка`
 
 </details>
 
 <details>
-<summary><strong>02 · 3D Sites</strong> — иммерсивный веб с продуктовой производительностью</summary>
+<summary><strong>02 · Реальное выполнение действий с защитными ограничениями</strong> — превращение намерения в конкретные действия в системе</summary>
 
 <br/>
 
-WebGL, Three.js, шейдеры и осмысленное движение. Сильное погружение без потери скорости, доступности и конверсии.
+Предназначен для упорядочивания файлов, создания структурированных заметок, запуска одобренных рабочих процессов и вызова разрешённых инструментов. Чувствительные операции требуют явного одобрения, а каждое действие записывается локально.
 
-`Three.js` `WebGL` `GLSL` `Motion` `Производительность` `60fps`
+`Инструменты` `Белые списки` `Подтверждения` `Журнал аудита`
 
 </details>
 
 <details>
-<summary><strong>03 · XaaS</strong> — платформы и подписочные продукты</summary>
+<summary><strong>03 · Маршрутизация моделей</strong> — нужный движок без привязки к поставщику</summary>
 
 <br/>
 
-От архитектуры до биллинга, от онбординга до дашборда. SaaS, спроектированный для предсказуемого масштабирования.
+Независимый от поставщика маршрутизатор выбирает локальный или облачный движок исходя из задачи, стоимости, конфиденциальности и доступности. Платный облачный доступ всегда подключается явно; маршрутизатор не должен без ведома пользователя отправлять данные хранилища в облачный API.
 
-`SaaS` `Платформы` `Биллинг` `Дашборды` `Инфраструктура` `Масштаб`
+`Ollama` `BYOK` `Резервный выбор` `Контроль расходов`
 
 </details>
+
+<details>
+<summary><strong>04 · Голос и визуальное присутствие</strong> — общение не только в тексте</summary>
+
+<br/>
+
+Основной интерфейс — терминал, поэтому главное функциональное ядро остаётся доступным, а двусторонний голос и дополнительный голографический 3D/HUD-аватар добавляют более погружающий слой.
+
+`Двусторонний голос` `3D-аватар` `HUD` `Доступность`
+
+</details>
+
+---
+
+## 🧩 Модули и возможности дворецкого
+
+Планируемое модульное ядро объединяет шесть практических направлений:
+
+- **💻 Выполнение действий и программирование:** Создаёт структуры, запускает команды, устраняет ошибки, читает журналы и помогает в процессах разработки.
+- **🎙️ Двусторонний голос:** Говорите с дворецким естественно и получайте ответы в аудио или текстовом формате.
+- **🌐 Голографическое 3D-лицо / интерфейс HUD:** Дополнительный визуальный слой, который придаёт индивидуальность и показывает состояние в реальном времени.
+- **📂 Управление файлами и данными:** Читает документы, упорядочивает папки, извлекает информацию и готовит структурированные результаты.
+- **🔎 Поиск и обобщение:** Сопоставляет информацию и выделяет главное без лишних затрат времени.
+- **🔌 Расширяемая архитектура:** Добавляйте новые навыки, инструменты и коннекторы под свой рабочий процесс.
+
+---
+
+## Obsidian как второй мозг
+
+Плагин рассчитан на компьютер, планшет и телефон и совместим с **бесплатным тарифом**. Obsidian Sync и Obsidian Publish не обязательны.
+
+- **Markdown — источник истины:** ваши заметки остаются читаемыми, переносимыми и под вашим контролем.
+- **Поиск с приоритетом локальных данных:** SQLite/FTS и дополнительные локальные эмбеддинги обеспечивают поиск и ответы со ссылками на источники.
+- **Практичный рабочий процесс:** захват, классификация, связывание, поиск, выполнение действий и проверка.
+- **Дополнительные хранилища и коннекторы:** 9Drive, Notion и Miro расширяют систему, не становясь обязательными зависимостями.
+
+```text
+Захват -> Классификация -> Связывание -> Поиск -> Действия -> Проверка
+   |          |         |          |       |       |
+  vault    локальные  wiki     локальный инструменты аудит
+  заметки  правила   ссылки   индекс                журнал
+```
+
+| Интеграция | Запланированная роль | Обязательна? |
+| :--- | :--- | :--- |
+| **Obsidian** | Хранилище, заметки, задачи и интерфейс плагина | Да |
+| **[9Drive](https://github.com/zenhosta/9drive)** | Вложения, экспорт и маршрутизация резервных копий через интерфейс поставщика хранилища | Нет |
+| **Notion** | Необязательный коннектор для импорта и синхронизации страниц и баз данных | Нет |
+| **Miro** | Необязательный коннектор для импорта досок | Нет |
+
+Локальное хранилище остаётся режимом по умолчанию. Второй мозг должен быть полезен, даже если все дополнительные коннекторы отключены.
+
+---
+
+## Движки моделей
+
+Agent Harness уже поддерживает локальный Ollama и endpoints, совместимые с OpenAI, на компьютере, планшете и телефоне. Профили Lite, Balanced и Full выбирают локальные модели меньшего или большего размера; облачные endpoints требуют HTTPS, а HTTP в частной LAN для Ollama необходимо включить явно. Более широкий план адаптеров сохраняет независимость агента от любого конкретного поставщика моделей.
+
+| Движок | Режим | Запланированная роль |
+| :--- | :--- | :--- |
+| **Ollama** | Локальный | Бесплатный основной вариант с поддержкой офлайн-режима |
+| **OpenAI-compatible endpoints** | Локальный или самостоятельно размещаемый | Гибкие локальные и частные развёртывания |
+| **Claude** | Облачный / BYOK | Сложные рассуждения и работа с большими объёмами текста |
+| **Gemini** | Облачный / BYOK | Длинный контекст и мультимодальные задачи |
+| **OpenAI / Codex** | Облачный / BYOK | Программирование и рабочие процессы с использованием инструментов |
+| **OpenRouter** | Облачный / BYOK | Доступ к нескольким моделям через один API |
+
+**Текущая политика:** Ollama используется по умолчанию; другой поставщик подключается только явно. **Планируемая маршрутизация:** сначала локальные модели; облако — только с разрешения; резервный выбор — только среди разрешённых поставщиков.
+
+---
+
+## 🚀 Быстрый старт
+
+Установите Obsidian и локальный плагин захвата JONIS.AI одной командой. Установщик создаст хранилище в папке «Документы», будет сохранять заметки в `JONIS.AI/Inbox.md` и откроет Obsidian. Для локального захвата не нужны Python или API-ключ.
+
+### Windows — PowerShell
+
+```powershell
+irm https://raw.githubusercontent.com/JONIS-AI/JONIS.AI/main/install.ps1 | iex
+```
+
+### macOS — Терминал
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/JONIS-AI/JONIS.AI/main/install.sh | bash
+```
+
+Установщик всегда устанавливает портативный **Agent Harness** в Obsidian. На компьютере используется Python 3.10+, если он доступен; на телефоне, планшете и ПК без Python работает среда JavaScript. Перед запуском можно изучить [install.ps1](install.ps1) или [install.sh](install.sh).
+
+Если Obsidian оставляет плагины сообщества ограниченными, откройте **Настройки → Плагины сообщества**, отключите **Ограниченный режим** и включите **JONIS.AI**.
+
+### Agent Harness — все устройства
+
+| Профиль | Где лучше работает | Локальная модель по умолчанию | Шаги |
+| :--- | :--- | :--- | :--- |
+| **Lite** | Слабый ПК | `qwen2.5-coder:1.5b` | 4 |
+| **Balanced** | Планшет или телефон | `qwen2.5-coder:3b` | 6 |
+| **Full** | Ноутбук или настольный ПК | `qwen2.5-coder:7b` | 8 |
+
+1. Установите [Ollama](https://ollama.com) отдельно и загрузите модель Balanced:
+
+   ```bash
+   ollama pull qwen2.5-coder:3b
+   ```
+
+2. В Obsidian откройте **Настройки → JONIS.AI**, выберите профиль и поставщика, затем запустите **JONIS.AI: Ask Agent Harness**.
+
+На телефоне и планшете портативной среде не нужен Python. Используйте совместимый с OpenAI HTTPS-адрес или включите **Разрешить HTTP в частной LAN для Ollama** в настройках JONIS.AI и укажите Ollama на другом компьютере той же частной сети через LAN-URL, например `http://192.168.1.10:11434`. Локальный захват остаётся доступным офлайн.
+
+Обвязка может выполнять `list_notes`, `read_note`, `search_notes`, `create_note` и `append_note` внутри хранилища. Она не запускает команды системы и не получает доступ к файлам за пределами хранилища, а содержимое заметок считается недоверенными данными. Запись требует явного флажка в окне Agent Harness или `--allow-writes` в CLI; каждый вызов инструмента записывается в `.jonis-ai/audit.jsonl`.
+
+В CLI выберите профиль командой `python -m harness --profile lite "Прочитай мои заметки"`. Для совместимого с OpenAI поставщика также можно задать `provider`, `model` и `base_url` в `.jonis-ai/config.json`, передав ключ через `JONIS_AI_API_KEY`. Режим Full даёт максимальные возможности на ноутбуке/ПК; автоматическая маршрутизация моделей, расширенное выполнение системных задач, голос и 3D/HUD остаются в плане развития.
 
 ---
 
@@ -93,35 +254,25 @@ WebGL, Three.js, шейдеры и осмысленное движение. Си
 
 <img src="https://img.shields.io/badge/Python-0b1020?style=flat-square&logo=python&logoColor=22d3ee" alt="Python" />
 <img src="https://img.shields.io/badge/TypeScript-0b1020?style=flat-square&logo=typescript&logoColor=22d3ee" alt="TypeScript" />
-<img src="https://img.shields.io/badge/JavaScript-0b1020?style=flat-square&logo=javascript&logoColor=22d3ee" alt="JavaScript" />
 <img src="https://img.shields.io/badge/Node.js-0b1020?style=flat-square&logo=nodedotjs&logoColor=22d3ee" alt="Node.js" />
-<img src="https://img.shields.io/badge/Next.js-0b1020?style=flat-square&logo=nextdotjs&logoColor=a5b4fc" alt="Next.js" />
-<img src="https://img.shields.io/badge/React-0b1020?style=flat-square&logo=react&logoColor=a5b4fc" alt="React" />
+<img src="https://img.shields.io/badge/SQLite-0b1020?style=flat-square&logo=sqlite&logoColor=8b5cf6" alt="SQLite" />
+<img src="https://img.shields.io/badge/Ollama-0b1020?style=flat-square&logo=ollama&logoColor=22d3ee" alt="Ollama" />
+<img src="https://img.shields.io/badge/Obsidian-0b1020?style=flat-square&logo=obsidian&logoColor=8b5cf6" alt="Obsidian" />
 
 <br/>
 
-<img src="https://img.shields.io/badge/OpenAI-0b1020?style=flat-square&logo=openai&logoColor=a5b4fc" alt="OpenAI" />
-<img src="https://img.shields.io/badge/LangChain-0b1020?style=flat-square&logo=langchain&logoColor=a5b4fc" alt="LangChain" />
-<img src="https://img.shields.io/badge/PostgreSQL-0b1020?style=flat-square&logo=postgresql&logoColor=8b5cf6" alt="PostgreSQL" />
-<img src="https://img.shields.io/badge/Supabase-0b1020?style=flat-square&logo=supabase&logoColor=8b5cf6" alt="Supabase" />
-<img src="https://img.shields.io/badge/Redis-0b1020?style=flat-square&logo=redis&logoColor=8b5cf6" alt="Redis" />
-<img src="https://img.shields.io/badge/n8n-0b1020?style=flat-square&logo=n8n&logoColor=8b5cf6" alt="n8n" />
-
-<br/>
-
+<img src="https://img.shields.io/badge/9Drive-0b1020?style=flat-square&logoColor=22d3ee" alt="9Drive" />
+<img src="https://img.shields.io/badge/Notion-0b1020?style=flat-square&logo=notion&logoColor=a5b4fc" alt="Notion" />
+<img src="https://img.shields.io/badge/Miro-0b1020?style=flat-square&logo=miro&logoColor=8b5cf6" alt="Miro" />
 <img src="https://img.shields.io/badge/Three.js-0b1020?style=flat-square&logo=threedotjs&logoColor=22d3ee" alt="Three.js" />
 <img src="https://img.shields.io/badge/WebGL-0b1020?style=flat-square&logo=webgl&logoColor=22d3ee" alt="WebGL" />
-<img src="https://img.shields.io/badge/GLSL-0b1020?style=flat-square&logo=opengl&logoColor=22d3ee" alt="GLSL" />
-<img src="https://img.shields.io/badge/Blender-0b1020?style=flat-square&logo=blender&logoColor=a5b4fc" alt="Blender" />
-<img src="https://img.shields.io/badge/Figma-0b1020?style=flat-square&logo=figma&logoColor=a5b4fc" alt="Figma" />
-<img src="https://img.shields.io/badge/Vercel-0b1020?style=flat-square&logo=vercel&logoColor=a5b4fc" alt="Vercel" />
 <img src="https://img.shields.io/badge/GitHub%20Actions-0b1020?style=flat-square&logo=githubactions&logoColor=a5b4fc" alt="GitHub Actions" />
 
 </div>
 
 ---
 
-## Статистика
+## Показатели
 
 <div align="center">
 
@@ -139,11 +290,11 @@ WebGL, Three.js, шейдеры и осмысленное движение. Си
 </div>
 
 <details>
-<summary><strong>Змейка вкладов</strong> — создаётся автоматически workflow</summary>
+<summary><strong>Змейка вкладов</strong> — создаётся автоматически с помощью рабочего процесса</summary>
 
 <br/>
 
-Анимация создаётся workflow [`snake.yml`](.github/workflows/snake.yml) и публикуется в ветке `output`. Она появится после первого запуска Action.
+Анимация создаётся рабочим процессом [`snake.yml`](.github/workflows/snake.yml) и публикуется в ветке `output`. Она появляется после первого запуска Action.
 
 <div align="center">
   <img src="https://raw.githubusercontent.com/JONIS-AI/JONIS.AI/output/snake.svg" alt="Змейка, поедающая график вкладов" width="100%" />
@@ -153,13 +304,78 @@ WebGL, Three.js, шейдеры и осмысленное движение. Си
 
 ---
 
-## Планы
+## 🗺️ План развития
 
-- [x] Фирменный стиль JONIS.AI
-- [x] Анимированный интерактивный README
-- [ ] Первые open-source проекты
-- [ ] Лаборатория 3D-экспериментов
-- [ ] Открытые Discussions
+- [x] Визуальный стиль JONIS.AI и анимированный многоязычный профиль
+- [x] Архитектура продукта: локальный приоритет, независимость от моделей и приоритет Obsidian
+- [x] Установка одной командой для Windows/macOS с Obsidian, локальным захватом и портативным Agent Harness для компьютера, планшета и телефона
+- [x] Локальный и портативный Agent Harness: поставщики Ollama/OpenAI-compatible, профили Lite/Balanced/Full, Markdown-инструменты только для хранилища, явное разрешение на запись и журнал аудита
+- [ ] Автономное выполнение системных задач, автоматический маршрутизатор моделей и расширенные политики действий
+- [ ] MVP плагина Obsidian: захват, классификация, wiki-ссылки и ответы со ссылками на источники
+- [ ] Собственные облачные адаптеры BYOK: Claude, Gemini, OpenAI/Codex и OpenRouter
+- [ ] Коннекторы 9Drive, Notion и Miro
+- [ ] Двусторонний голос с низкой задержкой
+- [ ] Голографическое 3D-лицо / интерактивный HUD
+- [ ] Библиотека навыков и интеграций сообщества
+- [ ] Демонстрационное хранилище, выпуски и документация для участников
+
+---
+
+## ❓ Частые вопросы
+
+<details>
+<summary><strong>Действительно ли JONIS.AI бесплатен?</strong></summary>
+
+<br/>
+
+Программное обеспечение распространяется под лицензией MIT, а локальный Agent Harness не предполагает платы за API. Вы оплачиваете только собственное оборудование и электричество. Облачные API необязательны и могут тарифицироваться поставщиком в зависимости от использования.
+
+</details>
+
+<details>
+<summary><strong>Работает ли он с бесплатным тарифом Obsidian?</strong></summary>
+
+<br/>
+
+Да. Локальный плагин захвата работает с вашим хранилищем без Obsidian Sync или Obsidian Publish. Agent Harness использует то же локальное хранилище на компьютере, планшете и телефоне.
+
+</details>
+
+<details>
+<summary><strong>Отправляет ли он мои заметки в облако?</strong></summary>
+
+<br/>
+
+Обвязка не отправляет заметки по собственной инициативе. Ollama используется по умолчанию и работает локально. Поставщик, совместимый с OpenAI, получает запрос только при его явной настройке; передаётся лишь контекст, необходимый для запроса, в соответствии с условиями поставщика.
+
+</details>
+
+<details>
+<summary><strong>Можно ли переключаться между моделями?</strong></summary>
+
+<br/>
+
+Вы можете выбрать Ollama или endpoint, совместимый с OpenAI, в `.jonis-ai/config.json` или через аргументы CLI, а также подобрать профиль Lite, Balanced или Full под своё устройство. Автоматическая маршрутизация по задачам и собственные адаптеры Claude, Gemini, OpenAI/Codex и OpenRouter остаются в плане развития.
+
+</details>
+
+<details>
+<summary><strong>Нужны ли 3D-лицо или микрофон?</strong></summary>
+
+<br/>
+
+Нет. Текущий Agent Harness работает в Obsidian на компьютере, планшете и телефоне; CLI на Python также доступен на компьютере. Голос и 3D/HUD будут необязательными модулями, которые можно включать отдельно.
+
+</details>
+
+<details>
+<summary><strong>Доступен ли агент сейчас?</strong></summary>
+
+<br/>
+
+Ограниченный Agent Harness уже доступен в Obsidian для компьютера, планшета и телефона. Он может перечислять, читать, искать, создавать и дополнять Markdown-заметки внутри хранилища; запись требует явного разрешения, а вызовы инструментов аудируются. Он не запускает команды системы и не получает доступ к файлам за пределами хранилища. Автоматическая маршрутизация моделей, расширенное выполнение системных задач, голос и 3D/HUD ещё разрабатываются.
+
+</details>
 
 ---
 
@@ -169,11 +385,19 @@ WebGL, Three.js, шейдеры и осмысленное движение. Си
 | --- | --- |
 | GitHub | [@jonypeixoto](https://github.com/jonypeixoto) |
 | Организация | [JONIS-AI](https://github.com/JONIS-AI) |
-| Связь | [открыть issue](https://github.com/JONIS-AI/JONIS.AI/issues) |
+| Общение | [открыть issue](https://github.com/JONIS-AI/JONIS.AI/issues) |
 
 <div align="center">
 
-<img src="./assets/footer.svg" alt="Build the future. Ship the impossible." width="100%" />
+**[Если JONIS.AI сэкономил вам время сегодня, поставьте ⭐ репозиторию!](https://github.com/JONIS-AI/JONIS.AI)**
+
+<sub>Создано с открытым кодом и ориентацией на выполнение задач.</sub>
+
+</div>
+
+<div align="center">
+
+<img src="./assets/footer.svg" alt="Создавайте будущее. Достигайте невозможного." width="100%" />
 
 <sub>© 2026 JONIS.AI — создано с одержимостью деталями.</sub>
 

@@ -1,0 +1,26 @@
+.jonis-ai-capture {
+  min-height: 180px;
+  width: 100%;
+  resize: vertical;
+}
+
+.jonis-ai-harness-prompt {
+  min-height: 140px;
+  margin-bottom: 12px;
+}
+
+.jonis-ai-permission {
+  display: block;
+  margin-bottom: 12px;
+}
+
+.jonis-ai-harness-status {
+  color: var(--text-muted);
+}
+
+.jonis-ai-harness-output {
+  max-height: 280px;
+  overflow: auto;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}

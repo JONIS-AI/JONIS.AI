@@ -1,0 +1,10 @@
+{
+  "id": "jonis-ai",
+  "name": "JONIS.AI",
+  "version": "0.3.0",
+  "minAppVersion": "1.5.0",
+  "description": "Local-first capture and a permissioned Agent Harness for desktop, tablet and mobile.",
+  "author": "Jony Peixoto",
+  "authorUrl": "https://github.com/jonypeixoto",
+  "isDesktopOnly": false
+}
